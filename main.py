@@ -6,7 +6,7 @@ from data import question_data
 
 question_bank = []
 for question in question_data:
-    Question(text=question["text"], answer=question["answer"])
-    question.append()
+    new_question = Question(text=question["text"], answer=question["answer"])
+    question_bank.append(new_question)
 
 print(question_bank)
