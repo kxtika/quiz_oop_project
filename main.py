@@ -11,7 +11,5 @@ for question in question_data:
     question_bank.append(new_question)
 
 quiz = QuizBrain(question_bank)
-while True:
+while not quiz.no_questions():
     quiz.next_question()
-    if quiz.still_has_questions():
-        break
