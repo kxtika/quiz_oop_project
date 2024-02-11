@@ -6,7 +6,6 @@ class QuizBrain:
 
     def no_questions(self):
         return self.question_number == len(self.question_list)
-        print("You've completed the quiz.")
 
     def next_question(self):
         current_question = self.question_list[self.question_number]
